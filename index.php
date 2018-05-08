@@ -1,5 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+	<th>hello</th>
+</table>
 
-echo "hello this is sharvan kumar";
-
-?>
+</body>
+</html>
