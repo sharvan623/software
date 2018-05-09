@@ -28,6 +28,7 @@
       </label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="mail.php">Send Mail</a>>
   </form>
 </div>
 
