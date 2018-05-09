@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<table>
-	<th>hello</th>
-</table>
+<?php
 
-</body>
-</html>
+ echo "hello";
+
+?>
