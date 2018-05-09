@@ -31,5 +31,13 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <giet13aei015@gmail.com>' . "\r\n";
 $headers .= 'Cc: dream.sharvan@gmail.com' . "\r\n";
 
-mail($to,$subject,$message,$headers);
+$mail = mail($to,$subject,$message,$headers);
+if ($mail == 'false') {
+	
+	echo "Not Send!";
+}
+else{
+
+	echo "send";
+}
 ?>
