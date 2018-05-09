@@ -1,13 +1,43 @@
 <?php
-$to = 'shravank@vtechsolution.us';
-$subject = 'Marriage Proposal';
-$message = 'Hi Jane, will you marry me?'; 
-$from = 'peterparker@email.com';
- 
-// Sending email
-if(mail($to, $subject, $message)){
-    echo 'Your mail has been sent successfully.';
-} else{
-    echo 'Unable to send email. Please try again.';
+$to = "giet13aei015@gmail.com, shravank@vtechsolution.us";
+$subject = "HTML email";
+
+$message = "
+<html>
+<head>
+<title>HTML email</title>
+</head>
+<body>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>John</td>
+<td>Doe</td>
+</tr>
+</table>
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: <giet13aei015@gmail.com>' . "\r\n";
+$headers .= 'Cc: dream.sharvan@gmail.com' . "\r\n";
+
+$mail = mail($to,$subject,$message,$headers);
+if ($mail == 'false') {
+	
+	echo "Not Send!";
+}
+else{
+
+	echo "send";
 }
 ?>
